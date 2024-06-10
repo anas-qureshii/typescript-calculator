@@ -1,0 +1,41 @@
+inquirer is typescript libraray we used it for taking input in command line interface
+
+installtion steps 
+first add typescript config file using
+tsc --init
+the initializing npm using
+npm init -y
+the install inquirer using 
+npm install --save inquirer
+then we have to download some types npm i @types/inquirer -D
+next steps 3 changes in tsconfig.json file
+target:ES2022
+commonjs:"Nodenext"
+modalresoluiton also nodenext
+now 1 change in package.json file
+after main add
+type:"module"
+//some error comes
+
+we again install inquirer
+
+npm install inquirer
+
+we did
+
+tsc // just tsc which will compile
+now this is inquirer code
+
+import inquirer from "inquirer";
+
+const answer = await inquirer.prompt([{
+    type:'input',
+    name:'field',
+    message:'Enter the field name'
+}]);
+
+console.log(answer.field)
+
+
+
+
